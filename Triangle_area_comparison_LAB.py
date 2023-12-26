@@ -23,11 +23,17 @@ if __name__ == "__main__":
     triangle2 = Triangle()
 
     # TODO: Read and set base and height for triangle1 (use set_base() and set_height())
-      
+    triangle1.set_base(float(input()))
+    triangle1.set_height(float(input())) 
+     
     # TODO: Read and set base and height for triangle2 (use set_base() and set_height())
+    triangle2.set_base(float(input()))
+    triangle2.set_height(float(input()))
       
     # TODO: Determine larger triangle (use get_area())
-      
+    larger_triangle = triangle1 if triangle1.get_area() > triangle2.get_area() else triangle2
+    
     print('Triangle with larger area:')
     # TODO: Output larger triangle's info (use print_info())
+    larger_triangle.print_info()
 
